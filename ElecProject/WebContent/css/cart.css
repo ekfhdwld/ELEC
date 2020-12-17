@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+/* 장바구니 css */
+.korFontJ {font-family: 'Noto Sans KR', sans-serif; font-weight: 700; font: 20px;}
+.engFontJ {font-family: 'Quicksand', sans-serif ;font-weight: 600; font-size: 20px;}
+
+#phrasesJ {width: 1280px; height: 110px; text-align: center;  margin: 0 auto; }
+#phrasesJ #p1J {margin: 0px; font-family: 'Noto Sans KR', sans-serif; font-weight: 700; font-size: 25px; margin-top: 40px;}
+#phrasesJ #p2J {margin: 0px; font-family: 'Noto Sans KR', sans-serif; font-weight: 500; font-size: 15px; }
+#pEmptyJ {margin: 0px; font-family: 'Noto Sans KR', sans-serif; font-weight: 700; font-size: 25px; margin-top: 50px;} 
+
+#cartListJ {width: 1280px;   margin: 0 auto;}
+.listJ {width: 900px; height: 150px; margin: 0 auto;}
+.listJ img{width: 150px; height: 112px;  margin-top: 20px; display: inline-block;}
+.hrJ {width: 1280px; height: 2px; background-color: darkgray;}
+.prodInfoJ   {display: inline-block; width: 740px; margin: 0 auto;  float: right; margin-top: 50px;}
+.info1J { margin-left: 20px; width: 350px; display: inline-block; display: inline-block; text-align: center; }
+.info2J {width: 100px; display: inline-block; display: inline-block; text-align: center; }
+.info3J {margin-left: 50px; width: 200px; display: inline-block; display: inline-block; text-align: center; }
+
+#ulJ {list-style: none;}
+#ulJ li {vertical-align: middle;}
+.lineJ {width: 720px; height: 2px; background-color: darkgray; float: right; }
+.btnDeleteJ {float: right; height: 25px; width: 70px; margin-top: 20px; margin-right: 10px; border: none; background-color: rgb(180, 225, 255); 
+color: rgb(28, 99, 206); border-radius: 10px; font-size: 15px; font-family: 'Noto Sans KR', sans-serif; font-weight: 700; font: 20px;}
+#cartHrJ {width: 1040px;}
+
+#lastRowJ  {width: 1180px; height: 150px;  margin-top: 10px;}
+#lastRowJ  p {display: inline-block; float: right; margin-top: 0px;}
+#totalRowJ {width: 400px; height: 50px; display: block; margin-top: 20px; line-height: 50px;}
+#payRowJ {width: 300px;  height: 60px; display: block; line-height: 50px;}
+#totalJ {margin-right: 30px; margin-left: 50px; font-size: 25px; width: 200px;}
+#btnPayJ {height: 30px; width: 150px; border: none; background-color: rgb(180, 225, 255); font-size: 18px;
+        color: rgb(28, 99, 206); border-radius: 5px; float: right;  margin-right: -40px;}
+#divRightJ {float: right; margin-right: 50px;}
+
+#isEmptyCartJ  {margin: 0 auto; width: 1280px; height: 650px; text-align: center;}
+#btnShoppingJ  {width: 360px; height: 55px; line-height: 53px; border-radius: 10px; font-size: 20px; border: none; text-align: center;
+                display: block; margin: 0 auto; margin-bottom: 30px;}
+#imgShoppingJ {display: inline-block; width: 1200px; height: 500px; margin-top: 30px; margin: 0 auto;}
+#imgShoppingJ span {display: inline-block; margin-top: 210px; font-size: 30px;}
+
+#aGoToShopJ {color : #06c; display: block; margin-top: 20px; text-decoration: none; font-size: 26px; }
+#aGoToShopJ:visited {text-decoration: none; color: #06c;}
+#aGoToShopJ:active {text-decoration: none; color: #06c;}
+#aGoToShopJ:hover {text-decoration: underline; color: #06c;}
+
+#btnMainJ  {width: 360px; height: 55px; line-height: 53px; border-radius: 10px; font-size: 20px; border: none; text-align: center;
+display: block; margin: 0 auto; margin-bottom: 30px;}
+#goToShoppingJ {display: inline-block; width: 1200px; height: 500px; margin-top: 50px; }
+#goToNotebookJ {display: inline-block; width: 550px; height: 500px; margin-right: 25px; background-color: rgb(242, 242, 242); }
+#goToPhoneJ {display: inline-block; width: 550px; height: 500px;  margin-left: 25px; background-color: rgb(242, 242, 242);}
+#goToNotebookJ p, #goToPhoneJ p {font-size: 40px; display: block; margin-top: 30px;}
+#btnPhoneJ, #btnNotebookJ {width: 60px; height: 30px; background-color: #0071e3; border: none; 
+border-radius: 18px; text-align: center; font-size: 17px; color: white;}

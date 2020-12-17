@@ -1,0 +1,14 @@
+/admin/
+/board/
+/cart/
+/color/
+/common/
+/datasource.properties
+/ioInfo/
+/member/
+/order/
+/payInfo/
+/product/
+/productCategory/
+/productState/
+/sql/

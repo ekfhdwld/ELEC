@@ -1,0 +1,371 @@
+@charset "UTF-8";
+/*header */
+*{ margin: 0px; padding: 0px;}
+
+  header,footer {/* padding: 10px; */width: 1280px; margin: 0 auto; font-family: 'Quicksand', sans-serif;  }
+  
+  
+
+ 
+  
+ /* 가운데 정렬 */
+ #container { margin: 0 auto; padding: 0px; width: 1280px;}
+ 
+ #header {  margin: 0 auto; background-color:#000000d9; width: 1280px; height: 70px; position: fixed; z-index: 30;display : block;   }
+ 
+  .w_na { float: center;  margin-top: 8.5px;  text-align: center; border: 1px white; height: 0px;
+
+  }
+  .w_na .w_u{   padding: 0px;  margin: 0px;} 
+  .w_na .w_u .w_l {  display :inline-flex;  position: relative;  list-style-type: none;  color: white;   font-size: 16px;  width: 120px; }
+ .w_na .w_u .w_l a{ display: block; /* padding: 0 15px; */ text-decoration: none;
+    color: white;     
+         
+  }
+  
+  /* menu list */
+  .w_na .w_u .w_l a:hover{ -webkit-text-stroke: 0.5px;   }  
+  .w_na .w_u  .w_u{  background-color:grey; position: absolute; width:95px;  border-radius: 5px;   top: 20px; font-size: 20px;  display: none;}
+  .fa{margin: 4px;}
+  .w_na .w_u .w_l:hover >.w_u{ display: block; }
+  .w_na .w_u .w_l a.menuA{transform: scale(1);transition: 0.5s;display: block;}
+  .w_na .w_u .w_l a.menuA.hide-item{transform: scale(0);}
+  .w_na .w_u .w_l:nth-child(2) a.menuA.hide-item{transition-delay: 0.6s;}  
+  .w_na .w_u .w_l:nth-child(3) a.menuA.hide-item{transition-delay: 0.5s;}  
+  .w_na .w_u .w_l:nth-child(4) a.menuA.hide-item {transition-delay: 0.4s;}   
+  .w_na .w_u .w_l:nth-child(5) a.menuA.hide-item{ transition-delay: 0.3s;}
+  .w_na .w_u .w_l:nth-child(2) a.menuA{ transition-delay: 0s;}  
+  .w_na .w_u .w_l:nth-child(3) a.menuA { transition-delay: 0.2s;}  
+  .w_na .w_u .w_l:nth-child(4) a.menuA { transition-delay: 0.4s;}   
+  .w_na .w_u .w_l:nth-child(5) a.menuA {transition-delay: 0.6s; }  
+  
+ 
+  
+  /*search form */
+  .search-form  { position: absolute;
+    top: 25px;
+    /* border: 1px solid; */
+   
+    left: 27%;
+    transform: translateY(-30%);
+    width: 450px;
+    height: 35px;
+    /* background-color: #ede4e417; */
+    /* border-radius: 30px; */
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s; }
+  .search-form.active  { opacity: 1;  visibility: visible; transition-delay: 0.8s; } 
+  .search-form input {  padding: 5px;
+    width: 80%;
+    height: 25px;
+    background: transparent;
+    color:#fff;   
+    font-size: 19px;
+    border-radius: 5px;}
+  .search-form :before { top: 12px;  left: -26px; font-size: 18px; color:#fff;  }
+  .search-form input::placeholder {  color: white;   }
+  
+  .login-form {  background: #ffffffc2;  border-radius: 8px;   position: absolute;  top: 55px;  left: 67%; padding: 4px;  
+   				 width: 180px;  height: 200px; opacity: 0;  visibility: hidden;}
+  .login-form.active {  opacity: 1;   visibility: visible;  } 
+  .login-form input {width: 90%; height: 45px; background: #ffffffc2; font-size: 15px; border-left: 0; border-top: 0;  border-right: 0;
+     					border-bottom: 1px solid #999999; border-radius: 3px; outline: none; }
+  .login-form input::placeholder { color: #413e3e;  }
+ 	
+ 	/*submit button */    					
+  .submit-btn {    width: 90px; padding: 4px; border-radius: 3px; background:#000000d9; font-size: 15px; -webkit-text-stroke: 0.5px; color: #ffffffc2; }
+  .submit-btn:hover{ border: 2px solid #ffffffc2; cursor: pointer; color: white; }
+  
+  #w_sfB
+  {
+    width :30px;
+    
+    height: 39px;
+    border: 1px solid black;
+    background: transparent;    
+  }
+  #w_sfB:hover
+  {
+     width :30px;
+    
+    height: 36px;
+    /* border: 2px solid #ffffffc2; */
+   background-color: transparent; 
+   cursor: pointer;
+
+  }
+  
+  #register { padding: 4px; border-radius: 3px; background:#000000d9; font-size: 15px; -webkit-text-stroke: 0.5px; color: #ffffffc2; }
+  #register:hover {border: 2px solid #ffffffc2; cursor: pointer; color: black;}
+  
+  
+  #log-out { padding: 4px; border-radius: 3px; background:#000000d9; font-size: 15px; -webkit-text-stroke: 0.5px; color: #ffffffc2; }
+  #log-out:hover{ border: 2px solid #ffffffc2; cursor: pointer; color: white;}
+  
+  /* main*/
+  
+  /* logedIn */
+  #logged-in input[type=button]{border-radius:20px;}
+  
+  
+  #img{
+ 	
+    height :700px;
+    background-image: url('../images/WH/appleLap1.jpg'); 
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    animation-name: animate;
+    animation-direction: alternate-reverse;
+    animation-duration: 20s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite ;
+    animation-play-state: running;
+    animation-timing-function: ease-in-out;
+  }
+  #iphone{
+    height :500px;   
+    background-image: url("../images/WH/usingIphone1.jpg");
+    background: cover;
+    background-position: center;
+    
+    font-family: 'Quicksand', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    font-style: none;
+    top :100px;     
+  }
+  
+  #homeImg , #imgHome{
+    width: 637px;  
+  }
+  #content {
+    background-color: #f5f5f5;
+    width: 640px;
+    height:1000px;
+    float:left;
+  }
+  #sideinfo {
+    background-color: #dcdad9;
+    width: 280px;
+    height: 400px;
+    float:left;
+  }
+
+  @keyframes animate{
+    0%{
+        background-image: url("../images/WH/appleLap1.jpg");
+    }
+    18%{
+        background-image: url("../images/WH/lgV.jpg");
+    }
+    36%{
+        background-image: url("../images/WH/iphone_1.jpg");
+     }
+    54%{
+        background-image: url("../images/WH/sam_ad7.jpg");
+        }
+    
+    72%{
+        background-image: url("../images/WH/samsunglap1.jpeg");
+    }
+    90%{
+        background-image: url("../images/WH/samsungphone1.jpg");
+    }
+    100%{
+        background-image: url("../images/WH/LG.jpg");
+    }  
+
+  
+}
+#section1{
+ 
+  height: 1000px;
+  overflow: hidden; 
+  position: relative;
+  width: 1280px
+}
+#section1 img{
+  position: absolute;
+  top: 0;
+  left: 50%; 
+  /* right: 0; */
+  transform: translate(-50%);
+  width: 1280px
+}
+/* main LG Picture*/
+#moveLg
+{
+  position: relative; 
+ 
+  height: 1500px;
+  background-image: url("../images/WH/Lg2.jpg");
+  background-attachment: fixed;
+
+}
+/* main Iphone Picture*/
+.sec1{
+  height: 800px;
+  background-image: url("../images/WH/scroll_iphone.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  width: 1280px
+}
+/* main iPHOne Picture*/
+.sec3{
+  height: 800px;
+  background-image: url('../images/WH/scroll_iphone2.jpg'); 
+  background-position: center;
+  width: 1280px
+}
+/* main Rank Picture*/
+#SpecialRolling 
+{
+  
+  overflow : auto;  
+     position : relative;
+     background-color:  #413e3e; 
+     border-bottom: 1px solid #999999;   
+
+ 
+text-align: center;
+ width: 120px; 
+ height: 23px; 
+ overflow: hidden; 
+ position: relative;
+  /* font-weight: bold;  */
+  color: #f5f5f5; 
+  -webkit-text-stroke: 0.5px;
+  z-index: 1;
+  left :90%;
+  }
+#SpecialRolling div
+ {
+   /* border:1px solid blue;  */
+   text-align: center;
+   width: 120px;
+   height: 20px;
+   padding-top: 4px;
+   position: relative;
+   }
+  
+  /*  search table 결과*/
+  
+  #tbl-PC{
+            padding: 0px;       
+            font-size: 25px;             
+          
+        }
+        
+#tbl-PC #tr_W #th_W
+       {
+            width: 500PX;	
+            font-size : 30px        
+        }
+        
+        
+      #tr_W #td_W{
+        border: 1px solid black;
+        text-align : center;
+        }
+        
+  
+  
+/** 정보수정페이지 **/
+
+
+#memberFrm{
+    width: 530px;
+    margin: auto;
+    padding:64px;
+    
+}
+
+.login-formH .labelH {
+    font-size: 15px;
+    margin: 13px 0px 5px 5px;
+    display: block;
+}
+
+#spanH{
+    color: red;
+}
+
+.login-formH .userH {
+    width: 345px;
+    height: 35px;
+    font-size: 18px;
+    padding-left: 15px;
+    margin: 0px auto 15px;
+    border-radius: 5px;
+    border: 1px solid #dbdada;
+}
+/* .login-form .check_btn {padding-top:2px; width: 100px; height: 35px; background-color: #a7a6a6; color: white; text-align: center; line-height: 30px; font-size: 17px; display: inline-block; margin-left: -4px; cursor: pointer;}
+.login-form .check_btn:hover{
+    background-color: #61696e;
+} */
+
+.login-formH .userH::placeholder {
+    color: #cdcdcd;
+}
+
+/* .login-form #userId_ {
+    width: 220px;
+} */
+#add_btnH{
+    width: 90px; height: 35px; border-radius: 3px; background-color: #6e6c6c; color: white; text-align: center; line-height: 20px; font-size: 17px;   cursor: pointer;
+}
+#update_btnH{
+    width: 90px; border-radius: 7px; background-color: #a7a6a6; color: white; text-align: center; line-height: 20px; font-size: 17px;   cursor: pointer;
+}
+#delete_btnH{
+    width: 50px; border-radius: 7px; background-color: #a7a6a6; color: white; text-align: center; line-height: 20px; font-size: 17px;  cursor: pointer;
+}
+#uppw_btnH{
+    width: 120px; border-radius: 7px; background-color: #a7a6a6; color: white; text-align: center; line-height: 20px; font-size: 17px; cursor: pointer;
+}   
+.form_btnH:hover{  
+    background-color: black;
+}
+#roadFullAddrH{
+    width: 255px;
+    height: 35px;
+    font-size: 18px;
+    padding-left: 15px;
+    margin: 0px auto 15px;
+    border-radius: 5px;
+    border: 1px solid #dbdada;
+}
+/** 비밀번호 변경 팝업창 **/
+div#updatePassword-container table {margin:0 auto; border-spacing: 20px;}
+ 
+
+ #updatePassword-container .pwd {
+    width: 200px;
+    height: 35px;
+    font-size: 18px;
+    padding-left: 15px;
+    margin: 0px auto 15px;
+    border-radius: 5px;
+    border: 1px solid #dbdada;
+}
+#uppw{
+    width: 50px; border-radius: 7px; background-color: #d3cfcf; color: rgb(49, 45, 45); text-align: center; line-height: 20px; font-size: 17px;   cursor: pointer;
+
+}
+#close{
+    width: 50px; border-radius: 7px; background-color: #a7a6a6; color: white; text-align: center; line-height: 20px; font-size: 17px;   cursor: pointer;
+}  
+  
+  
+  
+  /*footer */
+   #footer { background-color:#000000;
+  text-align:center;
+    clear: both;
+    height: 70px; 
+    padding-top: 45px;}
+    
+    

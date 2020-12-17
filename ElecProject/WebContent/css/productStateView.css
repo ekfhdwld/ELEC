@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+.graph-section { margin: 0 0 10px 0;  }
+div#graph-containerS { width: 1280px; margin: 0 0 10px 0; height:60px; line-Height:60px; background-color: #929ca9; color: #fff; text-align: center;}
+.prodcutStateS { margin: auto;}
+.productStateS .myChart_1 { boarder : solid black; padding-right: 10px; margin-right: 100px;}
+.productStateS .myChart_2 { padding: 600px; margin-right: 100px;}
+#chartName1S, #chartName2S {text-align: center; font-family: 'Noto Sans KR', sans-serif; font-weight: 600; font-size: 20px; }

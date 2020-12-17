@@ -1,0 +1,132 @@
+@charset "UTF-8";
+
+        .tableB, .conB {
+        font-family: 'Noto Sans KR', sans-serif;
+            width: 800px;
+            min-height: 600px;
+            text-align: center;
+            border-top: 1px solid #444444;
+            border-collapse: collapse;
+            margin: 0 auto;
+        }
+
+        /* .tableB, .tabletrB, .tabletrB>td{
+            border: 1px solid black;
+
+        } */
+        .containerB {
+            width: 1000px;
+            min-height: 800px;
+            margin: 0 auto;
+            
+            text-align: center;
+        }
+
+        .tabletrB>td {
+            border-bottom: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        .tabletrB>th,
+        .tabletrB>td {
+            border-bottom: 1px solid #444444;
+            padding: 10px;
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+
+        .pagingB{
+            margin-left: 80px;
+            font-size: 20px;
+            display: inline-block;
+            color: brown;
+        }
+        .pagingB>a{
+            text-decoration: none;
+        }
+
+        #deleteB {
+            width: 150px;
+            height: 50px;
+            background-color: brown;
+            border-radius: 10px;
+            font-size: 15px;
+            color: white;
+            margin-top: 30px;
+            margin-left: 650px;
+            cursor: pointer;
+            border-style: none;
+        }
+
+        .naviB {
+            list-style-type: none;
+            height: 40px;
+            padding: 0;
+            text-align: center;
+            margin: 0;
+            margin-left: 750px;
+            margin-bottom: 30px;
+        }
+
+        .naviB li {
+            float: left;
+            position: relative;
+            padding: 0;
+            width: 150px;
+            font-weight: bold;
+            line-height: 40px;
+            background: rgb(99, 211, 255);
+            border-radius: 10px;
+        }
+
+        .naviB li a {
+            display: block;
+            font-size: 14px;
+            padding: 5px 25px;
+            color: #fff;
+            text-decoration: none;
+            font-size: 17px;
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+
+        .naviB li a:hover {
+            font-weight: bold;
+            border-radius: 10px;
+            color: black;
+        }
+
+        .naviB li ul {
+            display: none;
+            position: absolute;
+            left: 0;
+            width: 150px;
+            height: 180px;
+            background: skyblue;
+            list-style-type: none;
+            border-radius: 10px;
+            padding: 0;
+            margin: 0;
+        }
+
+        .naviB li:hover ul {
+            display: block;
+        }
+
+        .naviB li ul li {
+            float: none;
+            height: 30px;
+            line-height: 30px;
+            padding: 5px 0;
+            background: none;
+        }
+
+        .naviB li ul li a {
+            background: skyblue;
+            font-size: 15px;
+            color: white;
+            margin-top: 5px;
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+        .a_B{
+        	  text-decoration: none;
+        	  font-family: 'Noto Sans KR', sans-serif;
+        }

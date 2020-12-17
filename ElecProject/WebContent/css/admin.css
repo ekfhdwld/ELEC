@@ -1,0 +1,23 @@
+﻿@CHARSET "UTF-8";
+/*관리자 페이지 : 회원관리 */
+section#memberList-container {text-align:center;}
+section#memberList-container table#tbl-member {width:1100px; border:1px solid gray; border-collapse:collapse; margin-top:40px;}
+table#tbl-member th, table#tbl-member td {border-bottom: 2px solid #8b8b8b; padding: 10px; border-collapse: collapse; font-family: 'Quicksand', sans-serif ;font-weight: 600;}
+
+#tbl-member { width: 1000px; border-top: 2px solid #8b8b8b; border-collapse: collapse; margin: 0 auto;} 
+/*페이징 : 페이지당회원수*/
+section#memberList-container div#numPerPage-container{float:right; margin-top: 10px;}
+section#memberList-container form#numPerPageFrm{display:inline;}
+/*페이징 : 페이지바 */
+section#memberList-container div#pageBar{margin-top:10px; text-align:center; background-color: #929ca9; height: 50px; line-height : 50px;}
+section#memberList-container div#pageBar span.cPage{color: #0066ff; margin-right: 5px;font-family: 'Quicksand', sans-serif ;font-weight: 600; font-size: 17px;  }
+section#memberList-container div#pageBar a{margin-right: 5px; font-family: 'Quicksand', sans-serif ;font-weight: 600; font-size: 20px;}
+
+div#name-containerS { width: 1280px; margin: 0 0 10px 0; height:60px; line-Height:60px; background-color: #929ca9; color: #fff}
+div#search-container {width: 1280px; margin:20px 10px 10px 0; padding:10px; background-color: #fff;}
+div#search-memberId {display: inline-block;}
+div#search-memberRole{display:none;}
+div#search-container #search-btn { width: 80px; height: 30px; background-color: gray; color: white; 
+text-align: center; line-height: 20px; font-size: 15px; display: inline-block; margin-left: 4px; 
+border-radius: 8px; border: none;
+cursor: pointer; font-family: 'Quicksand', sans-serif; font-weight: 600; }

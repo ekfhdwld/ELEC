@@ -1,0 +1,33 @@
+@charset "UTF-8";
+/** 주문내역 **/
+.korFontH {font-family: 'Noto Sans KR', sans-serif; font-weight: 700; font-size: 20px;}
+.engFontH {font-family: 'Quicksand', sans-serif ;font-weight: 600; font-size: 20px;}
+
+.listH {width: 900px; height: 150px; margin: 0 auto;}
+.listH img{width: 150px; height: 112px;  margin-top: 20px; display: inline-block;}
+.hrH {width: 1280px; height: 2px; background-color: darkgray;}
+.prodInfoH   {display: inline-block; width: 740px; margin: 0 auto;  float: right; margin-top: 50px;}
+.info1H { margin-left: 20px; width: 350px; display: inline-block; display: inline-block; text-align: center; }
+.info2H {width: 100px; display: inline-block; display: inline-block; text-align: center; }
+.info3H {margin-left: 50px; width: 200px; display: inline-block; display: inline-block; text-align: center; }
+
+.ulH {list-style: none; }
+.ulH li {vertical-align: middle;}
+.lineH {width: 720px; height: 2px; background-color: darkgray; float: right; }
+.btnReiviewH {float: right; height: 25px; width: 70px; margin-top: 20px; margin-right: 10px; border: none; background-color: rgb(180, 225, 255); 
+color: rgb(28, 99, 206); border-radius: 10px; font-size: 15px; font-family: 'Noto Sans KR', sans-serif; font-weight: 700; font: 20px;}
+.dateH {text-align: center; background-color: darkgray; width: 1280px; margin: 0 auto; height: 30px; line-height: 30px; color:white; font-weight: 700;
+font-family: 'Quicksand', sans-serif ; font-size: 20px;}
+.hrH {width: 1280px; height: 2px; background-color: darkgray; margin: 0 auto;}
+
+#p1H {text-align: center; font-size: 30px; }
+.totalPriceH {text-align: right; margin-bottom: 20px;}
+.totalPH {margin-right: 200px; font-family: 'Quicksand', sans-serif ;font-weight: 600; font-size: 20px;} 
+
+
+#phrasesH {height: 60px; line-height: 60px; background-color: rgb(90 90 90);}
+#orderPH {font-family: 'Noto Sans KR', sans-serif; font-weight: 500; font-size: 15px;}
+
+#orderInfoH span {font-family: 'Noto Sans KR', sans-serif; font-weight: 500; font-size: 15px; margin-right: 20px;}
+
+#orderInfoH {margin-bottom : 20px; padding-left: 20px; padding-top: 10px;}

@@ -1,0 +1,105 @@
+@charset "UTF-8";
+        
+  /* 회원가입페이지 */
+.memberEnroll_content{
+    width: 1280px;
+    background-position: center;
+    background-size: cover;
+
+    
+}
+
+.sellerEnroll_content{
+    width: 1280px;
+    background-position: center;
+    background-size: cover;  
+}
+
+.form-boxS{
+    width: 420px;
+    height: 800px; 
+    position: relative; 
+    margin: 2% auto;
+    border-radius: 40px;
+    overflow: hidden;
+    padding: 15px; 
+    
+}
+.button-boxS{
+       width: 300px;
+       margin: 35px auto;
+       position: relative;
+       box-shadow: 0 0 20px 9px #0000001f;
+       border-radius: 30px;
+}
+.button-boxS #btnS{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 160px;
+    height: 100%;
+    background: linear-gradient(to right,#888888, #ffffff);
+    border-radius: 30px;
+    transition: .5s;
+
+}
+.button-boxS #toggle-btnS{
+    padding: 10px 50px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+   position: relative;
+    font-family: 'Quicksand', sans-serif;
+    font-weight : bold;
+}
+
+.enroll-formS {
+    width: 1000px;
+    margin: auto;
+   
+}
+.input-groupS{
+    top: 100px;
+    position: absolute;
+    width: 500px;
+    transition: .5s;
+}
+.enroll-formS #role-selectS{
+	 width : 200px;
+	 padding : .8em .2em;
+	 
+}
+.enroll-formS .label {
+    font-size: 15px;
+    font-family: 'Quicksand', sans-serif;
+    margin: 13px 0px 5px 5px;
+    display: block;
+}
+
+.enroll-formS span{
+    color: red;
+}
+
+.enroll-formS .member {
+    width: 280px;
+    height: 35px;
+    font-size: 18px;
+    padding-left: 15px;
+    margin: 0px auto 15px;
+    border-radius: 5px;
+    border: 1px solid #dbdada;
+}
+.enroll-formS #roadFullAddr{width: 400px; font-size: 10px; }
+.enroll-formS .serach_address_btn { width: 50px; height: 20px; background-color: black; color: white; text-align: center; line-height: 10px; font-size: 12px; display: inline-block; margin-left: 0px; cursor: pointer; font-family: 'Quicksand', sans-serif; font-weight : bold;}
+.enroll-formS .check_btn {padding-top:2px; width: 60px; height: 35px; background-color: #a7a6a6; color: white; text-align: center; line-height: 30px; font-size: 17px; display: inline-block; margin-left: -4px; cursor: pointer; font-family: 'Noto Sans KR', sans-serif; font-weight : bold;}
+.enroll-formS .reg-btn {padding-top:2px; width: 150px; height: 35px; background-color: #a7a6a6; color: white; text-align: center; line-height: 30px; font-size: 15px; display: inline-block; margin: 28px; cursor: pointer; font-family: 'Noto Sans KR', sans-serif; font-weight : bold; }
+.enroll-formS .check_btn:hover{ background-color: #61696e;}
+.enroll-formS .reg-btn:hover{
+    background-color: #61696e;
+}
+
+.enroll-formS .member::placeholder {
+    color: #cdcdcd;
+}
+ 
