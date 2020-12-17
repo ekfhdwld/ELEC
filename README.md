@@ -1,2 +1,0 @@
-# ELEC
-KH - Semi Project 
